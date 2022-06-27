@@ -4,9 +4,15 @@ on:
     branches:
       - main
       - develop
+    paths-ignore:
+      - '**.md'
+      - '**.yaml'
   pull_request:
     branches:
       - develop
+    paths-ignore:
+      - '**.md'
+      - '**.yaml'
 jobs:
   build:
     runs-on: ubuntu-latest
