@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MemoSample"
-include ':app'
-include ':feature-memo-presentation'
+include(":app")
+include(":feature-memo-presentation")
