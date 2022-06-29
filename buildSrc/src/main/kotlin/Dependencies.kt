@@ -16,7 +16,7 @@ object Dependencies {
   }
 
   object Lifecycle {
-    val lifecycleRuntimeKts by lazy { "androidx.lifecycle:lifecycle-runtime-kts:${Versions.lifecycle}" }
+    val lifecycleRuntimeKts by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}" }
   }
 
   object Activity {

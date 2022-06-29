@@ -49,19 +49,19 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.compose.ui:ui:1.1.0-beta01")
-    implementation("androidx.compose.material:material:1.1.0-beta01")
-    implementation("androidx.compose.ui:ui-tooling-preview:1.1.0-beta01")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
-    implementation("androidx.activity:activity-compose:1.3.1")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.1.0-beta01")
-    debugImplementation("androidx.compose.ui:ui-tooling:1.1.0-beta01")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:1.1.0-beta01")
+    implementation(Dependencies.Core.coreKts)
+    implementation(Dependencies.Compose.ui)
+    implementation(Dependencies.Compose.material)
+    implementation(Dependencies.Compose.uiToolingPreview)
+    implementation(Dependencies.Lifecycle.lifecycleRuntimeKts)
+    implementation(Dependencies.Activity.activityCompose)
+    testImplementation(Dependencies.Junit.junit)
+    androidTestImplementation(Dependencies.Test.Ext.junit)
+    androidTestImplementation(Dependencies.Test.Espresso.espressoCore)
+    androidTestImplementation(Dependencies.Compose.uiTestJunit4)
+    debugImplementation(Dependencies.Compose.uiToolingPreview)
+    debugImplementation(Dependencies.Compose.uiTestManifest)
 
-    implementation("com.google.dagger:hilt-android:2.42")
-    kapt("com.google.dagger:hilt-android-compiler:2.42")
+    implementation(Dependencies.Dagger.hiltAndroid)
+    kapt(Dependencies.Dagger.hiltAndroidCompiler)
 }
