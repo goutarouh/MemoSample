@@ -1,6 +1,6 @@
 object Versions {
 
-  const val core = "1.7.0"
+  const val core = "1.8.0"
   const val lifecycle = "2.3.1"
   const val activity = "1.3.1"
   const val appCompat = "1.4.2"
