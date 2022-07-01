@@ -27,6 +27,10 @@ android {
     kotlinOptions {
         jvmTarget =  "1.8"
     }
+
+    sourceSets.getByName("main") {
+        java.srcDir("src/main/kotlin")
+    }
 }
 
 dependencies {
@@ -37,4 +41,6 @@ dependencies {
     testImplementation(Dependencies.Junit.junit)
     androidTestImplementation(Dependencies.Test.Ext.junit)
     androidTestImplementation(Dependencies.Test.Espresso.espressoCore)
+
+    implementation(project(path = ":feature-memo-repository"))
 }
