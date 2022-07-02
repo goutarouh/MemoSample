@@ -43,4 +43,7 @@ dependencies {
     androidTestImplementation(Dependencies.Test.Espresso.espressoCore)
 
     implementation(project(path = ":feature-memo-repository"))
+
+    implementation(Dependencies.Coroutine.coroutineAndroid)
+    implementation(Dependencies.Coroutine.coroutineCore)
 }

@@ -31,6 +31,11 @@ object Dependencies {
     val uiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest:${Versions.compose}" }
   }
 
+  object Coroutine {
+    val coroutineAndroid by lazy { "org.jetbrains.kotlinx:kotlinx-coroutine-android:${Versions.coroutine}" }
+    val coroutineCore by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutineCore}" }
+  }
+
   object Dagger {
     val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Versions.daggerHilt}" }
     val hiltAndroidCompiler by lazy { "com.google.dagger:hilt-android-compiler:${Versions.daggerHilt}" }
