@@ -49,6 +49,10 @@ android {
     sourceSets.getByName("main") {
         java.srcDir("src/main/kotlin")
     }
+
+    hilt {
+        enableExperimentalClasspathAggregation = true
+    }
 }
 
 dependencies {
