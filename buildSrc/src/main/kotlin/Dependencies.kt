@@ -18,6 +18,7 @@ object Dependencies {
   object Lifecycle {
     val lifecycleRuntimeKts by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}" }
     val lifecycleViewModelKts by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}" }
+    val lifecycleViewModelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycle}" }
   }
 
   object Activity {

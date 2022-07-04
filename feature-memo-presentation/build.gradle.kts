@@ -49,7 +49,8 @@ dependencies {
     testImplementation(Dependencies.Junit.junit)
     androidTestImplementation(Dependencies.Test.Ext.junit)
     androidTestImplementation(Dependencies.Test.Espresso.espressoCore)
-    
+
+    implementation(Dependencies.Lifecycle.lifecycleViewModelCompose)
     implementation(Dependencies.Lifecycle.lifecycleViewModelKts)
 
     implementation(Dependencies.Coroutine.coroutineAndroid)
