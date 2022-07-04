@@ -32,7 +32,7 @@ object Dependencies {
   }
 
   object Coroutine {
-    val coroutineAndroid by lazy { "org.jetbrains.kotlinx:kotlinx-coroutine-android:${Versions.coroutine}" }
+    val coroutineAndroid by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutine}" }
     val coroutineCore by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutineCore}" }
   }
 
