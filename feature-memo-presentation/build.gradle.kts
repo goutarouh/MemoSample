@@ -29,6 +29,9 @@ android {
     kotlinOptions {
         jvmTarget =  "1.8"
     }
+    buildFeatures {
+        compose = true
+    }
 
     sourceSets.getByName("main") {
         java.srcDir("src/main/kotlin")
@@ -38,6 +41,9 @@ android {
 dependencies {
 
     implementation(Dependencies.Core.coreKts)
+    implementation(Dependencies.Compose.ui)
+    implementation(Dependencies.Compose.material)
+    implementation(Dependencies.Compose.uiToolingPreview)
     implementation(Dependencies.AppCompat.appCompat)
     implementation(Dependencies.Material.material)
     testImplementation(Dependencies.Junit.junit)
