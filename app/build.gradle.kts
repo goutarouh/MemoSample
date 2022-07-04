@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.memosample"
-        minSdk = 30
+        minSdk = 29
         targetSdk = 32
         versionCode = 1
         versionName ="1.0"
@@ -45,6 +45,14 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    sourceSets.getByName("main") {
+        java.srcDir("src/main/kotlin")
+    }
+
+    hilt {
+        enableExperimentalClasspathAggregation = true
+    }
 }
 
 dependencies {
@@ -64,4 +72,6 @@ dependencies {
 
     implementation(Dependencies.Dagger.hiltAndroid)
     kapt(Dependencies.Dagger.hiltAndroidCompiler)
+
+    implementation(project(path = ":feature-memo-presentation"))
 }

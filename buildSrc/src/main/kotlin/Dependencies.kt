@@ -17,6 +17,8 @@ object Dependencies {
 
   object Lifecycle {
     val lifecycleRuntimeKts by lazy { "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}" }
+    val lifecycleViewModelKts by lazy { "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}" }
+    val lifecycleViewModelCompose by lazy { "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycle}" }
   }
 
   object Activity {
@@ -29,6 +31,11 @@ object Dependencies {
     val uiToolingPreview by lazy { "androidx.compose.ui:ui-tooling-preview:${Versions.compose}" }
     val uiTestJunit4 by lazy { "androidx.compose.ui:ui-test-junit4:${Versions.compose}" }
     val uiTestManifest by lazy { "androidx.compose.ui:ui-test-manifest:${Versions.compose}" }
+  }
+
+  object Coroutine {
+    val coroutineAndroid by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutine}" }
+    val coroutineCore by lazy { "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutineCore}" }
   }
 
   object Dagger {
