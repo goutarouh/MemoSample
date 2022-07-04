@@ -3,7 +3,7 @@ package com.example.memosample.feature_memo_repository.model
 import androidx.annotation.IntRange
 import java.time.LocalDate
 
-data class MemoModel(
+data class MemoApiModel(
 
   val title: String,
 
