@@ -6,6 +6,7 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
 
 
 @Module
@@ -13,7 +14,8 @@ import dagger.hilt.components.SingletonComponent
 abstract class RepositoryHiltModule {
 
   @Binds
-  internal abstract fun bindMemoRepository(
+  @Singleton
+  abstract fun bindMemoRepository(
     memoRepositoryImpl: MemoRepositoryImpl
   ): MemoRepository
 
