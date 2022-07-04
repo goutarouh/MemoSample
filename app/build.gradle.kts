@@ -72,4 +72,6 @@ dependencies {
 
     implementation(Dependencies.Dagger.hiltAndroid)
     kapt(Dependencies.Dagger.hiltAndroidCompiler)
+
+    implementation(project(path = ":feature-memo-presentation"))
 }
